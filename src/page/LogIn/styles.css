@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.form_outer_field {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-image: linear-gradient(
+    250deg,
+    hsl(295deg 76% 51%) 0%,
+    hsl(284deg 70% 73%) 26%,
+    hsl(257deg 70% 86%) 39%,
+    hsl(202deg 92% 90%) 50%,
+    hsl(215deg 77% 81%) 61%,
+    hsl(221deg 73% 70%) 74%,
+    hsl(220deg 76% 51%) 100%
+  );
+  animation-name: translate;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@keyframes translate {
+  0% {
+    background-image: linear-gradient(250deg, hsl(295deg 76% 51%) 0%);
+  }
+
+  15% {
+    background-image: linear-gradient(
+      250deg,
+      hsl(295deg 76% 51%) 0%,
+      hsl(284deg 70% 73%) 26%
+    );
+  }
+  30% {
+    background-image: linear-gradient(
+      250deg,
+      hsl(295deg 76% 51%) 0%,
+      hsl(284deg 70% 73%) 26%,
+      hsl(257deg 70% 86%) 39%
+    );
+  }
+  45% {
+    background-image: linear-gradient(
+      250deg,
+      hsl(295deg 76% 51%) 0%,
+      hsl(284deg 70% 73%) 26%,
+      hsl(257deg 70% 86%) 39%,
+      hsl(202deg 92% 90%) 50%
+    );
+  }
+  60% {
+    background-image: linear-gradient(
+      250deg,
+      hsl(295deg 76% 51%) 0%,
+      hsl(284deg 70% 73%) 26%,
+      hsl(257deg 70% 86%) 39%,
+      hsl(202deg 92% 90%) 50%,
+      hsl(215deg 77% 81%) 61%
+    );
+  }
+  75% {
+    background-image: linear-gradient(
+      250deg,
+      hsl(295deg 76% 51%) 0%,
+      hsl(284deg 70% 73%) 26%,
+      hsl(257deg 70% 86%) 39%,
+      hsl(202deg 92% 90%) 50%,
+      hsl(215deg 77% 81%) 61%,
+      hsl(221deg 73% 70%) 74%
+    );
+  }
+
+  100% {
+    background-image: linear-gradient(
+      250deg,
+      hsl(295deg 76% 51%) 0%,
+      hsl(284deg 70% 73%) 26%,
+      hsl(257deg 70% 86%) 39%,
+      hsl(202deg 92% 90%) 50%,
+      hsl(215deg 77% 81%) 61%,
+      hsl(221deg 73% 70%) 74%,
+      hsl(220deg 76% 51%) 100%
+    );
+  }
+}
+
+.form_inner_field {
+  background-color: white;
+  padding: 35px 50px 80px 50px;
+  box-sizing: border-box;
+}
+
+.logIn_form {
+  display: grid;
+  gap: 30px;
+}
+
+.section-A {
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.section-B {
+  display: grid;
+  gap: 15px;
+  background-color: white;
+  padding: 10px;
+}
+
+.input-checkbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-checkbox label {
+  padding-right: 2px;
+}
+
+.input-checkbox a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+
+.submit-field {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+
+.submit-field a {
+  text-decoration: none;
+  color: dodgerblue;
+}

@@ -1,0 +1,25 @@
+.inputform {
+  display: grid;
+  width: 100%;
+}
+
+.inputform input {
+  padding: 12px 5px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.inputform label {
+  text-transform: capitalize;
+}
+
+.submit-button {
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.submit-button:hover {
+  background-color: rgb(13, 79, 146);
+  font-weight: 900;
+}
