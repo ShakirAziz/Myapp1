@@ -7,7 +7,7 @@ const LogIn = () => {
         <div className="form_inner_field">
           <form action="#" className="logIn_form">
             <div className="section-A">
-              <h2>Ship at shipped speeds</h2>
+              <h2>Ship at shipped moves</h2>
             </div>
             <div className="section-B">
               <Input placeholder="john@gmail..." htmlFor="Gmail" />
