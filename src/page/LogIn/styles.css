@@ -5,101 +5,40 @@
 
 .form_outer_field {
   height: 100vh;
-  display: grid;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-items: center;
-  background-image: linear-gradient(
-    250deg,
-    hsl(295deg 76% 51%) 0%,
-    hsl(284deg 70% 73%) 26%,
-    hsl(257deg 70% 86%) 39%,
-    hsl(202deg 92% 90%) 50%,
-    hsl(215deg 77% 81%) 61%,
-    hsl(221deg 73% 70%) 74%,
-    hsl(220deg 76% 51%) 100%
-  );
-  animation-name: translate;
-  animation-timing-function: ease-in-out;
-  animation-duration: 10s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
+  background-color: whitesmoke;
 }
 
-@keyframes translate {
-  0% {
-    background-image: linear-gradient(250deg, hsl(295deg 76% 51%) 0%);
-  }
+.middle-image {
+  margin: -36px;
+}
 
-  15% {
-    background-image: linear-gradient(
-      250deg,
-      hsl(295deg 76% 51%) 0%,
-      hsl(284deg 70% 73%) 26%
-    );
-  }
-  30% {
-    background-image: linear-gradient(
-      250deg,
-      hsl(295deg 76% 51%) 0%,
-      hsl(284deg 70% 73%) 26%,
-      hsl(257deg 70% 86%) 39%
-    );
-  }
-  45% {
-    background-image: linear-gradient(
-      250deg,
-      hsl(295deg 76% 51%) 0%,
-      hsl(284deg 70% 73%) 26%,
-      hsl(257deg 70% 86%) 39%,
-      hsl(202deg 92% 90%) 50%
-    );
-  }
-  60% {
-    background-image: linear-gradient(
-      250deg,
-      hsl(295deg 76% 51%) 0%,
-      hsl(284deg 70% 73%) 26%,
-      hsl(257deg 70% 86%) 39%,
-      hsl(202deg 92% 90%) 50%,
-      hsl(215deg 77% 81%) 61%
-    );
-  }
-  75% {
-    background-image: linear-gradient(
-      250deg,
-      hsl(295deg 76% 51%) 0%,
-      hsl(284deg 70% 73%) 26%,
-      hsl(257deg 70% 86%) 39%,
-      hsl(202deg 92% 90%) 50%,
-      hsl(215deg 77% 81%) 61%,
-      hsl(221deg 73% 70%) 74%
-    );
-  }
+.middle_field {
+  display: grid;
+  gap: 20px;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
 
-  100% {
-    background-image: linear-gradient(
-      250deg,
-      hsl(295deg 76% 51%) 0%,
-      hsl(284deg 70% 73%) 26%,
-      hsl(257deg 70% 86%) 39%,
-      hsl(202deg 92% 90%) 50%,
-      hsl(215deg 77% 81%) 61%,
-      hsl(221deg 73% 70%) 74%,
-      hsl(220deg 76% 51%) 100%
-    );
-  }
+.para_1 {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
 }
 
 .form_inner_field {
+  padding: 40px 20px;
   background-color: white;
-  padding: 35px 50px 80px 50px;
   box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.logIn_form {
+/* .logIn_form {
   display: grid;
-  gap: 30px;
-}
+  gap: 50px;
+} */
 
 .section-A {
   text-align: center;
@@ -109,9 +48,10 @@
 
 .section-B {
   display: grid;
-  gap: 15px;
+  gap: 25px;
   background-color: white;
-  padding: 10px;
+  /* padding: 20px; */
+  font-size: 17px;
 }
 
 .input-checkbox {
@@ -137,4 +77,23 @@
 .submit-field a {
   text-decoration: none;
   color: dodgerblue;
+}
+
+.line-break {
+  border-top: 1px solid lightgrey;
+}
+
+.create-button {
+  justify-self: center;
+}
+
+.create-button button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #42b72a;
+  color: white;
+  font-weight: 900;
+  font-size: 17px;
+  text-transform: capitalize;
 }

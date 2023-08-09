@@ -1,12 +1,12 @@
 .inputform {
   display: grid;
-  width: 100%;
+  width: 400px;
 }
 
 .inputform input {
-  padding: 12px 5px;
+  padding: 20px 10px;
   border: 1px solid lightgray;
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 .inputform label {
@@ -16,8 +16,10 @@
 .submit-button {
   background-color: dodgerblue;
   color: white;
-  font-weight: bold;
-  border-radius: 5px;
+  font-weight: 900;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
 }
 .submit-button:hover {
   background-color: rgb(13, 79, 146);
