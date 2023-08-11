@@ -1,5 +1,5 @@
 import "./styles.css";
-import Input from "../component/input/input.jsx";
+import Input from "../../component/input/input";
 const LogIn = () => {
   return (
     <>
@@ -20,7 +20,7 @@ const LogIn = () => {
         <div className="form_inner_field">
           <form action="#" className="logIn_form">
             <div className="section-B">
-              <Input type="Gmail" placeholder="Email address or phone number" />
+              <Input type="email" placeholder="Email address or phone number" />
               <div>
                 <Input
                   type="password"

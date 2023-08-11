@@ -1,4 +1,5 @@
-import LogIn from "./page/LogIn/index.jsx";
+import LogIn from "./pages/LogIn";
+
 function App() {
   return (
     <div className="App">
